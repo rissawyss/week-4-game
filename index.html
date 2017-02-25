@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Week-4-Game</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Ceviche+One" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
+</head>
+<body>
+
+<h1 class="title">GODZILLA RPG</h1>
+
+<a type="button" class="btn btn-default" id="restartButton" href="#">RESTART</a>
+
+<hr>
+
+<div class="row">
+  <div class="col-xs-9 col-xs-offset-3">
+    <h2 id="titleSelect">-------Select Your Character-------</h2>
+  </div>
+</div>
+
+<div class="row">
+<div class="gameCharSec">
+<div id="start" class="col-xs-offset-3 col-xs-9">
+<!-- Godzilla -->
+	<div class="col-xs-3">
+    	<div id="godzilla" class="thumbnail" class="selector">
+      	<img class="game-piece" src="assets/images/Godzilla.jpg" alt="Godzilla">
+      		<div class="caption">
+       		 <h3>GODZILLA</h3>
+       		 <div id="godzillaPoints" class="gamePoints"></div>
+      		</div>
+    	</div>
+  </div>
+
+	<!-- King Caesar --> 
+  <div class="col-xs-3">
+      <div id="caesar" class="thumbnail" class="selector">
+        <img class="game-piece" src="assets/images/King Caesar.jpg" alt="King Caesar">
+          <div class="caption">
+           <h3>KING CAESAR</h3>
+           <div id="caesarPoints" class="gamePoints"></div>
+          </div>
+      </div>
+  </div>
+
+<!-- Mothra -->
+  <div class="col-xs-3">
+      <div id="mothra" class="thumbnail" class="selector">
+        <img class="game-piece" src="assets/images/Mothra96.png" alt="Mothra">
+          <div class="caption">
+           <h3>MOTHRA</h3>
+           <div id="mothraPoints" class="gamePoints"></div>
+          </div>
+      </div>
+  </div>
+
+<!-- King Ghidorah -->
+  <div class="col-xs-3">
+      <div id="ghidorah" class="thumbnail" class="selector">
+        <img class="game-piece" src="assets/images/KingGhidorah.jpg" alt="King Ghidorah">
+          <div class="caption">
+           <h3>KING GHIDORAH</h3>
+           <div id="ghidorahPoints" class="gamePoints"></div>
+          </div>
+      </div>
+  </div>
+
+</div> 
+</div>
+</div> <!-- end of row -->
+
+<div class="row" id="gameHeader">
+    <div class="col-xs-4">
+      <h4>--Your Character--</h4>
+    </div>
+
+    <div class="col-xs-4">
+  <!-- <div class="btn-group" role="group" aria-label="attack"> -->
+  <button type="button" id="attackButton" class="btn btn-default">ATTACK</button>
+ </div>
+
+    <div class=class="col-xs-4">
+      <h4 class="pull-left">--Defender--</h4>
+    </div>
+  </div>
+
+<div class="row">
+<div class="container">
+  <div class="col-xs-4">
+    <div class="container" id="gameSection">
+    </div>
+  </div>
+
+<div class="col-xs-4">
+ <div id="gameAlerts">
+  </div>
+  </div>
+
+    <div class="col-xs-4">
+    <div class="container" id="gameEnemies"> 
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</body>
+</html>
